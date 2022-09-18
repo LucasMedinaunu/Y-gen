@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                BuscaPropiedad
+            </h2>
+
+            <div class="toogle"></div>
+
+
+        </header>
+
+        <video src="video.mp4" muted loop autoplay ></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h3>Inmuebles en venta y alquiler</h3>
+            <!-- <h3>Exploring the world</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic totam nesciunt consequuntur est soluta voluptas. Quisquam vitae omnis doloremque exercitationem?</p>
+            <a href="">Explore</a> -->
+           
+
+            <form id="buscador">
+               
+                <div class="row1">
+                    
+                        <div class="campos">
+                            <label for="tipo">Tipo</label>
+                            <select class="u-full-width" id="tipo">
+                                <option value="">Seleccione</option>
+                                <option value="Casa">Casa</option>
+                                <option value="PH">PH</option>
+                                <option value="Departamento">Departamento</option>
+                                <option value="Casa quinta">Casa quinta</option>
+                                <option value="Local">Local</option>
+                                <option value="Consultorio">Consultorio</option>
+                                <option value="Oficina">Oficina</option>
+                            </select>
+                        </div>
+                        <div class="campos">
+                            <label for="moneda">Moneda</label>
+                            <select class="u-full-width" id="moneda">
+                                <option value="">Seleccione</option>
+                                <option value="Pesos">Pesos</option>
+                                <option value="Dolares">Dolares</option>
+                            </select>
+                        </div>
+                        <div class="campos">
+                            <label for="minimo">Precio Min</label>
+                            <select class="u-full-width" id="minimo">
+                                    <option value="">Seleccione</option>
+                                    <option value="10000000">10,000,000</option>
+                                    <option value="100000000">100,000,000</option>
+                                    
+                                    <option value="300000000">300,000,000</option>
+                                    <option value="400000000">400,000,000</option>
+                                   
+                                    <option value="600000000">600,000,000</option>
+                                    <option value="700000000">700,000,000</option>
+                            </select>
+                        </div>
+                        <div class="campos">
+                            <label for="maximo">Precio Max</label>
+                            <select class="u-full-width" id="maximo">
+                                <option value="">Seleccione</option>
+                                <option value="10000000">10,000,000</option>
+                                <option value="100000000">100,000,000</option>
+                                
+                                <option value="300000000">300,000,000</option>
+                                <option value="400000000">400,000,000</option>
+                               
+                                <option value="600000000">600,000,000</option>
+                                <option value="700000000">700,000,000</option>
+                        </select>
+                        </div>
+
+                </div>
+                <div class="row2">
+                    <div class="campos">
+                        <label for="ambientes">Ambientes</label>
+                        <select class="u-full-width" id="ambientes">
+                                <option value="">Seleccione</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="campos">
+                        <label for="dormitorios">Dormitorios</label>
+                        <select class="u-full-width" id="dormitorios">
+                            <option value="">Seleccione</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+
+                    <div class="campos">
+                        <label for="opcion">Opción</label>
+                        <select class="u-full-width" id="opcion">
+                                <option value="">Seleccione</option>
+                                <option value="compra">Compra</option>
+                                <option value="alquiler">Alquiler</option>
+                            
+                                
+                                
+                        </select>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+
+        <ul class="social">
+            <li><a href="#"><img src="./facebook.png"></a></li>
+            <li><a href="#"><img src="./twitter.png"></a></li>
+            <li><a href="#"><img src="./instagram.png"></a></li>
+          </ul>
+
+
+    
+  
+   
+      
+
+    </section>
+
+    <!-- <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+
+
+        </ul>
+
+    </div> -->
+    <section id="seccion-resultados">
+        <h1>Resultados</h1>
+        
+        <div id="resultado">
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+    </section>
+
+    
+ 
+
+<script src="js/db.js"></script>
+<script src="js/app.js"></script>
+    <script>
+        const menuToogle = document.querySelector('.toogle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToogle.addEventListener('click',()=>{
+
+            menuToogle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
